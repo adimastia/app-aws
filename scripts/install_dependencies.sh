@@ -14,9 +14,3 @@ sudo npm install -g pm2 >> log/install_dependencies.log 2>&1
 npm install >> log/install_dependencies.log 2>&1
 
 echo "Finished install_dependencies.sh" >> log/install_dependencies.log
-
-echo "Start the app" > log/start_server.log
-
-pm2 start npm --name -- start >> log/build.log 2>&1
-
-echo "Finished build.sh" >> log/build.log

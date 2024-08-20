@@ -24,4 +24,3 @@ artifacts:
     - '**/*'
     - '!node_modules/**/*'
     - '!*.md'
-  discard-paths: yes
