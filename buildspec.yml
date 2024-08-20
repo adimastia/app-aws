@@ -2,9 +2,12 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
     commands:
-      - echo "Installing dependencies..."
+      - echo Installing dependencies...
       - npm install
+
   pre_build:
     commands:
       - echo "Running lint..."
@@ -22,5 +25,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-    - '!node_modules/**/*'
-    - '!*.md'
+  exclude-paths:
+    - 'node_modules/**'
+    - '*.md'
