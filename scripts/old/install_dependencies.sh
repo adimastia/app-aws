@@ -1,8 +1,10 @@
 #!/bin/bash
 
+# Set Permission for Directory
 sudo chown -R ubuntu:ubuntu /home/ubuntu/next-todo-app
 chmod 755 -R /home/ubuntu/next-todo-app
 
+# create log installation
 cd /home/ubuntu/next-todo-app
 mkdir log
 

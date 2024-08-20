@@ -1,0 +1,27 @@
+ version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+  pre_build:
+    commands:
+      - echo "Running lint..."
+      - npm run lint
+      - echo "Generating database migrations..."
+      - npm run generate
+  build:
+    commands:
+      - echo "Building the application..."
+      - npm run build
+  post_build:
+    commands:
+      - echo "Build completed."
+
+artifacts:
+  files:
+    - '**/*'
+    - '!node_modules/**/*'
+    - '!*.md'
+  discard-paths: yes
