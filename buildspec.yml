@@ -25,6 +25,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-  exclude-paths:
-    - 'node_modules/**'
-    - '*.md'
