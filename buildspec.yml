@@ -25,3 +25,6 @@ phases:
 artifacts:
   files:
     - '**/*'
+  discard-paths: no
+  exclude-paths:
+    - '**/node_modules/**'
