@@ -10,6 +10,7 @@ hooks:
     - location: scripts/install_package.sh
       timeout: 300
       runas: ubuntu
+      permission: 0755
   #   - location: scripts/install_dependencies.sh
   #     timeout: 300
   #     runas: ubuntu   
