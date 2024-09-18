@@ -1,5 +1,4 @@
 #!/bin/bash
-# Stop any existing Node.js server
+
+chown -R ubuntu:ubuntu /home/ubuntu/next-todo-app
 pm2 stop nextjs-app || true
-# Clean the destination directory
-# sudo rm -rf /home/ubuntu/next-todo-app/*
