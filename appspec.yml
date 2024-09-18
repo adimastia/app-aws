@@ -3,7 +3,11 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/next-todo-app
-    overwrite: yes
+permissions:
+  - object: /home/ubuntu/next-todo-app
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
