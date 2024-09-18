@@ -23,8 +23,7 @@ phases:
       - echo "Build completed."
 
 artifacts:
+  base-directory: '.'
   files:
     - '**/*'
-  discard-paths: no
-  exclude-paths:
-    - './node_modules/**'
+  name: nextjs-full-project-artifact
